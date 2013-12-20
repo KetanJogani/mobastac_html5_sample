@@ -1,0 +1,12 @@
+<section>
+    <h4><a href="{{ this.self.url }} ">{{{ this.self.title }}}</a></h4>
+    <img src="{{ this.self.media.images.0.origSrc }}" alt="{{ this.self.media.images.0.altText }}" />
+    <div class="meta">
+        {{#if this.self.updated }}<strong>Updated : </strong><span>{{ this.self.updated }} </span>{{/if}}
+        {{#if this.self.author }}<strong>Author : </strong><span>{{ this.self.author }}</span>{{/if}}
+    </div>
+    <div class="summary">
+        {{{ this.self.summary }}}
+    </div>
+    <a href="{{ this.self.url }}" class="btn btn-default">Continue reading</a>
+</section>
